@@ -1,10 +1,7 @@
-#Uses python3
+# Uses python3
 '''
 Maior Divisor Comum
 '''
-
-a = int(input())
-b = int(input())
 
 def mdc(a,b):
     if b==0:
@@ -12,4 +9,5 @@ def mdc(a,b):
     aa = a % b
     return mdc(b,aa)
 
+a, b = [int(x) for x in input().split()]
 print(mdc(a,b))
